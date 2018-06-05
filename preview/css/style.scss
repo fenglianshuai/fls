@@ -1,0 +1,251 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+    font-size: .14rem;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: 100%;
+}
+
+html {
+    font-size: 100px;
+}
+
+body {
+    user-select: none;
+    -webkit-user-select: none;
+    touch-callout: none;
+    -webkit-touch-callout: none;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+
+
+/*button,input,select,textarea{
+appearance:none;
+-webkit-appearance:none;
+}*/
+
+a {
+    tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    header {
+        width: 100%;
+        height: .5rem;
+        display: flex;
+        align-items: center;
+        background: #1D1D28;
+        padding: 0 .1rem;
+        a {
+            .iconfont {
+                color: #fff;
+            }
+        }
+        p {
+            flex: 1;
+            text-align: center;
+            color: #fff;
+        }
+    }
+    section {
+        flex: 1;
+        background: #363645;
+        overflow: hidden;
+        .top {
+            width: 100%;
+            height: 0.4rem;
+            background: -webkit-linear-gradient(#2CBB55, #2CBB86);
+            display: flex;
+            padding: 0 .1rem;
+            align-items: center;
+            a {
+                flex: 2;
+                width: 100%;
+                &:nth-child(1) {
+                    img {
+                        width: 100%;
+                        height: auto;
+                        padding: .1rem;
+                    }
+                }
+                &:nth-child(2) {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        padding-left: .1rem;
+                        width: .05rem;
+                        height: auto;
+                        display: block;
+                    }
+                    background: #2CBB86;
+                }
+            }
+            form {
+                flex: 8;
+                position: relative;
+                margin: 0 .1rem;
+                img {
+                    width: .15rem;
+                    height: auto;
+                    position: absolute;
+                    left: .1rem;
+                    top: 0rem;
+                    padding: .1rem 0;
+                }
+                input {
+                    width: 100%;
+                    height: .3rem;
+                    border-radius: .3rem;
+                    border: 0;
+                    padding-left: .3rem;
+                }
+            }
+        }
+        .banter {
+            width: 100%;
+            height: auto;
+            .swiper-wrapper {
+                width: 100%;
+                height: auto;
+                .swiper-slide {
+                    width: 100%;
+                    height: auto;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+                }
+            }
+        }
+        .nav {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: .02rem solid#363645;
+            justify-content: space-between;
+            dl {
+                width: 23%;
+                height: auto;
+                display: flex;
+                margin-top: .1rem;
+                flex-direction: column;
+                align-items: center;
+                dt {
+                    width: 100%;
+                    height: auto;
+                    img {
+                        width: 50%;
+                        height: auto;
+                        display: block;
+                        margin: 0 auto;
+                    }
+                }
+                dd {
+                    color: #fff;
+                    line-height: 2.5;
+                    font-size: .13rem;
+                }
+            }
+        }
+        .header {
+            width: 100%;
+            height: 0.3rem;
+            padding: 0 .1rem;
+            display: flex;
+            margin-top: .1rem;
+            img {
+                width: 0.04rem;
+                height: .17rem;
+                display: block;
+            }
+            p {
+                color: #fff;
+                font-size: .16rem;
+                margin-left: .1rem;
+                vertical-align: middle;
+            }
+        }
+        .merchant {
+            width: 100%;
+            height: auto;
+            .box {
+                width: 4.02rem;
+                height: auto;
+                display: flex;
+                div {
+                    width: 2rem;
+                    height: .9rem;
+                    flex-shrink: 0;
+                    text-align: center;
+                    line-height: .9rem;
+                    color: #fff;
+                    font-size: .2rem;
+                    font-weight: 600;
+                    &:nth-child(1) {
+                        background: url('../img/国际@2x.png');
+                        background-size: 100% 100%;
+                    }
+                    &:nth-child(2) {
+                        background: url('../img/黄@2x.png');
+                        background-size: 100% 100%;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        width: 100%;
+        height: 0.5rem;
+        display: flex;
+        dl {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            dt {
+                margin-right: .1rem;
+                img {
+                    width: 0.25rem;
+                    height: auto;
+                    display: block;
+                }
+            }
+            &:nth-child(1) {
+                dd {
+                    font-size: .2rem;
+                    color: #2CBB55;
+                }
+            }
+            &:nth-child(2) {
+                dd {
+                    font-size: .2rem;
+                    color: #363645;
+                }
+            }
+        }
+    }
+}
